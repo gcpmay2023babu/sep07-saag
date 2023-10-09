@@ -33,5 +33,6 @@ stages:
       inputs:
         containerRegistry: '$(dockerRegistryServiceConnection)'
         repository: '$(imageRepository)'
-        command: 'push'
+        command: 'buildAndPush'
+        Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: '$(tag)'
