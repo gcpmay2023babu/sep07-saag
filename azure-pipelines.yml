@@ -41,7 +41,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    
+    environment: 'gcpmay2023babusep07saag-7077.default'
     strategy:
       runOnce:
         deploy:
