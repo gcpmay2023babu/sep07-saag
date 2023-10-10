@@ -41,7 +41,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'gcpmay2023babuAzureDevOpsDockerimageAcrjuly1.default'
+    
     strategy:
       runOnce:
         deploy:
