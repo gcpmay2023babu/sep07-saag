@@ -25,6 +25,6 @@ stages:
       inputs:
         containerRegistry: 'oct10_docker_service_connection'
         repository: 'sridharbdoc0404/2011'
-        command: 'build'
+        command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
