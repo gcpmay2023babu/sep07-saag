@@ -38,5 +38,5 @@ stages:
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-        ArtifactName: ''
+        ArtifactName: 'manifests'
         publishLocation: 'Container'
