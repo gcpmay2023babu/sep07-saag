@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: g1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: g1
+  template:
+    metadata:
+      labels:
+        app: g1 
+    spec:
+      containers:
+        - name: g1 
+          image: newssep06.azurecr.io/g1
+          ports:
+          - containerPort: 80
